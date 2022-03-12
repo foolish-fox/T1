@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="main.css" type="text/css" />
+<script src="main.js"></script>
+<script src="body.js"></script>
+</head>
+
+<body>
+<div class="index">
+  <div class="icon">
+    <div id="lemon" class="iconl" onMouseOver="lemon_move()"></div>
+    <div class="iconr"></div>
+  </div>
+  <div>
+	  <div class="search">
+		<div onClick="enge_appear()" class="left"><img id="left_icon" class="left_icon" src="image/scbaidu.png" alt=""></div>
+		<input id="text" onKeyUp="find()" placeholder="某柠檬_柠檬味的导航"/>
+		<div class="right" id="btn" onClick="goto()"></div>
+		<div onMouseleave="enge_disappear()" id="enge" class="enge" onmouse style="display: none;">
+		  <div onClick="change_enge(this)" class="scbaidu"><img class="icon_baidu" src="image/searchChoice/scbaidu.png"><span>百度</span></div>
+		  <div onClick="change_enge(this)" class="scsougou"><img class="icon_sougou" src="image/searchChoice/scsougou.png"><span>搜狗</span></div>
+		  <div onClick="change_enge(this)" class="scbing"><img class="icon_biyin" src="image/searchChoice/scbing.png"><span>必应</span></div>
+		  <div onClick="change_enge(this)" class="sc360"><img class="icon_360" src="image/searchChoice/sc360.png"><span>360搜索</span></div>
+		  <div onClick="change_enge(this)" class="sccili"><img class="icon_cili" src="image/searchChoice/sccili.png"><span>磁力搜索</span></div>
+		  <div onClick="change_enge(this)" class="scgoogle"><img class="icon_Google" src="image/searchChoice/scgoogle.png"><span>Google</span></div>
+		  <div onClick="change_enge(this)" class="scyingyin"><img class="icon_yinshi" src="image/searchChoice/scyingyin.png"><span>影视搜索</span></div>
+		</div>
+	  </div>
+	  <div class="result">
+		  <ul id="list">
+		  </ul>
+	  </div>
+  </div>
+  <div>
+    <div class="nav">
+      <div onMouseMove="little_appear(this)" class="buy"></div>
+      <div class="news"></div>
+      <div class="forum"></div>
+      <div class="tool"></div>
+      <div class="favorites"></div>
+    </div>
+  </div>
+  <div id="little_icon" class="little_icon" style="display: none;"> <a target="_blank" class="little1" href="#"><img class="little_icon1" src="image/little_icon/baidufanyi.png" alt=""></a> <a target="_blank" class="little2" href="#"><img class="little_icon2" src="image/little_icon/baidufanyi.png" alt=""></a> <a target="_blank" class="little3" href="#"><img class="little_icon3" src="image/little_icon/baidufanyi.png" alt=""></a> <a target="_blank" class="little4" href="#"><img class="little_icon4" src="image/little_icon/baidufanyi.png" alt=""></a> <a target="_blank" class="little5" href="#"><img class="little_icon5" src="image/little_icon/baidufanyi.png" alt=""></a> <a target="_blank" class="little6" href="#"><img class="little_icon6" src="image/little_icon/baidufanyi.png" alt=""></a> </div>
+</div>
+<div class="bottom"> <span>©Moulem  粤ICP备17112242号</span> <a href="about/index.html"> 关于 </a> <a href="nav/index.html">标准版</a> </div>
+</body>
+</html>
